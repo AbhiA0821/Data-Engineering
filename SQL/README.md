@@ -6,8 +6,8 @@
 
 # 📖 Table of Contents
 
-- Introduction
 - Learning Objectives
+- Introduction
 - What is SQL?
 - Why SQL?
 - History of SQL
@@ -16,6 +16,7 @@
 - SQL vs NoSQL
 - SQL Architecture
 - Database Keys
+- SQL in Data Engineering
 - SQL in MedIntel
 - Progress Tracker
 - Next Topics
@@ -27,9 +28,10 @@
 
 - Understand SQL fundamentals.
 - Learn relational database concepts.
+- Master database design.
 - Build a strong foundation for Data Engineering.
 - Prepare for SQL interviews.
-- Apply SQL concepts in real-world projects like MedIntel.
+- Apply SQL concepts in real-world projects.
 
 ---
 
@@ -37,7 +39,7 @@
 
 SQL (Structured Query Language) is the standard language used to communicate with relational databases.
 
-It allows users to create, retrieve, update, delete, and manage data efficiently.
+It allows developers and data professionals to create, retrieve, update, delete, and manage structured data efficiently.
 
 SQL is one of the most important skills for Data Engineers, Data Analysts, Backend Developers, and Database Administrators.
 
@@ -61,9 +63,9 @@ It is used to:
 
 # 💡 Why SQL?
 
-SQL helps organizations efficiently manage and analyze large volumes of structured data.
+SQL is used because it enables efficient management of structured data.
 
-It is widely used in:
+Applications include:
 
 - Data Engineering
 - Data Analytics
@@ -77,30 +79,30 @@ It is widely used in:
 
 # 📜 History of SQL
 
-- Developed by IBM during the early 1970s.
-- Originally called **SEQUEL**.
-- Standardized by ANSI and ISO.
-- Today almost every relational database supports SQL.
+- Developed by IBM in the early 1970s.
+- Originally named **SEQUEL**.
+- Later standardized by ANSI and ISO.
+- Today it is supported by almost every relational database.
 
 ---
 
 # 🗄 Database Fundamentals
 
-A database is an organized collection of data that can be easily accessed, managed, and updated.
+A database is an organized collection of related data.
 
 Examples:
 
 - Hospital Database
-- Student Database
 - Banking Database
-- E-Commerce Database
+- Student Database
 - Employee Database
+- E-Commerce Database
 
 ---
 
 # 🏛 Relational Database Management System (RDBMS)
 
-An RDBMS stores data in tables consisting of rows and columns.
+An RDBMS stores data using tables made up of rows and columns.
 
 Popular RDBMS:
 
@@ -117,17 +119,15 @@ Popular RDBMS:
 
 | SQL | NoSQL |
 |------|--------|
-| Relational | Non-relational |
+| Relational | Non-Relational |
 | Table-based | Document / Key-Value / Graph |
 | Fixed Schema | Flexible Schema |
-| SQL Language | Different Query Languages |
-| ACID Support | BASE (varies by database) |
+| Uses SQL | Uses Different Query Languages |
+| ACID Support | BASE (depends on DB) |
 
 ---
 
 # 🏗 SQL Architecture
-
-Basic SQL Workflow
 
 ```
 User
@@ -153,23 +153,22 @@ Result Returned
 
 # 🔑 Database Keys
 
-Database Keys are attributes (columns) used to uniquely identify records and establish relationships between tables.
+Database Keys uniquely identify records and establish relationships between tables.
 
-Keys help maintain:
+Benefits:
 
-- Data Integrity
-- Data Consistency
-- Relationships
-- Faster Searching
-- No Duplicate Records
+- Maintain Data Integrity
+- Prevent Duplicate Data
+- Improve Query Performance
+- Establish Relationships
 
 ---
 
-## 1️⃣ Primary Key
+## Primary Key
 
-A Primary Key uniquely identifies every row in a table.
+A Primary Key uniquely identifies each row.
 
-### Features
+Properties:
 
 - Cannot be NULL
 - Cannot contain duplicate values
@@ -182,15 +181,11 @@ Example
 |101|Rahul|
 |102|Priya|
 
-Student_ID is the Primary Key.
-
 ---
 
-## 2️⃣ Foreign Key
+## Foreign Key
 
-A Foreign Key links one table with another.
-
-Example
+A Foreign Key creates relationships between tables.
 
 Students
 
@@ -204,25 +199,25 @@ Marks
 |----------|------------|
 |1|101|
 
-Student_ID in Marks is the Foreign Key.
+Student_ID is the Foreign Key.
 
 ---
 
-## 3️⃣ Candidate Key
+## Candidate Key
 
-A Candidate Key is any column that can uniquely identify a record.
+A column that can uniquely identify a record.
 
-A table may have multiple Candidate Keys.
+Multiple Candidate Keys may exist.
 
 One becomes the Primary Key.
 
 ---
 
-## 4️⃣ Alternate Key
+## Alternate Key
 
-Candidate Keys that are not selected as the Primary Key are called Alternate Keys.
+A Candidate Key that is not selected as the Primary Key.
 
-Example
+Example:
 
 Primary Key → Employee_ID
 
@@ -230,32 +225,32 @@ Alternate Key → Email
 
 ---
 
-## 5️⃣ Composite Key
+## Composite Key
 
-A Composite Key is formed using two or more columns together.
+Two or more columns combined to uniquely identify a row.
 
-Example
+Example:
 
 (Student_ID, Subject_ID)
 
 ---
 
-## 6️⃣ Unique Key
+## Unique Key
 
-A Unique Key ensures unique values.
+Ensures unique values.
 
 Unlike Primary Key:
 
-- Usually allows one NULL value
-- Multiple Unique Keys can exist
+- Usually allows one NULL (depends on the database)
+- Multiple Unique Keys allowed
 
 ---
 
-## 7️⃣ Super Key
+## Super Key
 
-A Super Key is any combination of columns that uniquely identifies a row.
+Any combination of columns capable of uniquely identifying a record.
 
-Example
+Example:
 
 - Employee_ID
 - Employee_ID + Name
@@ -310,96 +305,73 @@ REFERENCES Students(Student_ID)
 
 ---
 
+# 📊 SQL in Data Engineering
+
+SQL is one of the core technologies used in Data Engineering.
+
+Typical use cases include:
+
+- Querying large datasets
+- ETL pipelines
+- Data Cleaning
+- Data Validation
+- Data Warehousing
+- Reporting
+- Dashboard Development
+- Data Transformation
+- Data Analysis
+
+---
+
 # 🏥 SQL in MedIntel
 
-In the MedIntel project, SQL is used for:
+MedIntel is an end-to-end Healthcare Data Engineering project.
 
-- Creating database tables
-- Designing relational schemas
+SQL is used for:
+
+- Creating database schemas
 - Managing patient records
 - Managing vital sign records
-- Creating Primary and Foreign Key relationships
-- Retrieving patient information
-- Joining multiple healthcare tables
-- Building dashboards
-- Generating reports
+- Creating Primary & Foreign Key relationships
+- Writing analytical queries
 - Supporting ETL pipelines
+- Dashboard reporting
 
-Example:
+Example
 
-Patients Table
+Patients
 
 ```
 Patient_ID (Primary Key)
 ```
 
-VitalSigns Table
+VitalSigns
 
 ```
 Patient_ID (Foreign Key)
 ```
 
-This relationship connects each patient's vital sign records with the corresponding patient.
-
----
-
-# 💼 Interview Questions
-
-### Q1. What is a Primary Key?
-
-A Primary Key uniquely identifies every record in a table.
-
----
-
-### Q2. Can a Primary Key contain NULL values?
-
-No.
-
----
-
-### Q3. Difference between Primary Key and Unique Key?
-
-Primary Key
-
-- No NULL values
-- Only one per table
-
-Unique Key
-
-- Allows one NULL (database dependent)
-- Multiple Unique Keys allowed
-
----
-
-### Q4. What is a Foreign Key?
-
-A Foreign Key creates a relationship between two tables.
-
----
-
-### Q5. What is a Composite Key?
-
-A Composite Key is made using two or more columns together.
+This relationship connects every patient's vital signs with the patient information.
 
 ---
 
 # 📈 Progress Tracker
 
 | Day | Topic | Status |
-|------|------------------------------|--------|
-| Day 1 | SQL Fundamentals | ✅ |
-| Day 2 | Database Keys | ✅ |
-| Day 3 | Constraints | ⏳ |
-| Day 4 | SQL Data Types & SQL Commands | ⏳ |
-| Day 5 | CRUD, SELECT & Filtering | ⏳ |
-| Day 6 | Functions, GROUP BY & Joins | ⏳ |
-| Day 7 | Advanced SQL + Interview + Mini Project | ⏳ |
+|------|-------------------------------|--------|
+| Day 1 | SQL Fundamentals | ✅ Completed |
+| Day 2 | Database Keys | ✅ Completed |
+| Day 3 | SQL Constraints | ⏳ Planned |
+| Day 4 | Data Types & SQL Commands | ⏳ Planned |
+| Day 5 | CRUD Operations & SELECT Queries | ⏳ Planned |
+| Day 6 | Functions, GROUP BY, HAVING & Joins | ⏳ Planned |
+| Day 7 | Advanced SQL, Mini Project & Interview Questions | ⏳ Planned |
 
 ---
 
 # 📅 Next Topics
 
-- Constraints
+- SQL Constraints
 - SQL Data Types
 - DDL Commands
 - DML Commands
@@ -418,4 +390,6 @@ A Composite Key is made using two or more columns together.
 
 ---
 
-⭐ **Repository Goal:** Build a complete SQL handbook from beginner to advanced level while applying concepts in the MedIntel Data Engineering project.
+⭐ **Repository Goal**
+
+Build a complete SQL handbook from beginner to advanced level while applying concepts to real-world Data Engineering projects such as **MedIntel**.

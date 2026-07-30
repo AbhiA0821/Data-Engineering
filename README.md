@@ -1,54 +1,54 @@
 # 🚀 Data Engineering Learning Journey
 
-> A structured 8-week journey to master Data Engineering by learning industry-standard tools, building real-world projects, and documenting everything on GitHub.
+> A structured 8-week roadmap to master Data Engineering through consistent learning, hands-on practice, and real-world project development.
 
 ![Learning](https://img.shields.io/badge/Learning-Data%20Engineering-blue)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-success)
-![GitHub](https://img.shields.io/badge/GitHub-Daily%20Updates-orange)
+![Updates](https://img.shields.io/badge/Updates-Daily-orange)
+![GitHub](https://img.shields.io/badge/Open%20Source-Learning-brightgreen)
 
 ---
 
 # 👋 About This Repository
 
-Welcome!
+Welcome to my **Data Engineering Learning Journey**.
 
-This repository documents my journey of becoming a **Data Engineer** through consistent daily learning and hands-on practice.
+This repository documents my complete journey from learning SQL fundamentals to building production-style Data Engineering pipelines using industry-standard technologies.
 
-The goal is not only to learn concepts but also to apply them by building real-world data engineering solutions using modern tools and technologies.
+Every concept is learned through:
 
-Every topic includes:
-
-- 📖 Notes
-- 💻 Practical Examples
+- 📖 Detailed Notes
+- 💻 Hands-on Practice
 - 📝 Interview Questions
 - 🚀 Mini Projects
 - 🌍 Real-world Use Cases
+- 📊 End-to-End Project Implementation
+
+This repository is updated **daily** as I continue learning.
 
 ---
 
-# 🎯 Learning Goals
+# 🎯 Objectives
 
-- Build a strong SQL foundation
-- Learn Data Engineering concepts
-- Process large-scale datasets using PySpark
-- Build ETL pipelines
-- Automate workflows with Apache Airflow
-- Learn Apache Kafka for streaming data
-- Containerize applications using Docker
-- Understand cloud fundamentals
-- Build production-ready Data Engineering projects
-- Prepare for Data Engineering interviews
+- Master SQL from Beginner to Advanced
+- Learn Data Engineering Fundamentals
+- Build ETL Pipelines
+- Learn Distributed Data Processing
+- Build Production-Ready Data Pipelines
+- Understand Cloud Data Engineering
+- Create an End-to-End Healthcare Data Pipeline
+- Prepare for Data Engineering Interviews
 
 ---
 
-# 🛠️ Technologies
+# 🛠️ Technology Stack
 
 | Category | Technologies |
-|----------|--------------|
+|-----------|--------------|
 | Programming | Python, SQL |
 | Database | DuckDB, PostgreSQL, MySQL |
-| Big Data | PySpark |
-| Workflow Orchestration | Apache Airflow |
+| Big Data | Apache Spark (PySpark) |
+| Workflow | Apache Airflow |
 | Streaming | Apache Kafka |
 | Containerization | Docker |
 | Cloud | AWS (Learning) |
@@ -56,18 +56,18 @@ Every topic includes:
 
 ---
 
-# 🗓️ 8-Week Learning Roadmap
+# 🗺️ Learning Roadmap
 
-| Week | Topics |
-|------|--------|
-| Week 1 | SQL Fundamentals |
-| Week 2 | Python for Data Engineering & DuckDB |
-| Week 3 | PySpark Basics |
-| Week 4 | Advanced PySpark & ETL |
-| Week 5 | Apache Airflow & Docker |
-| Week 6 | Apache Kafka & AWS Basics |
-| Week 7 | MedIntel End-to-End Project |
-| Week 8 | Interview Preparation & Repository Enhancement |
+| Week | Learning Focus | Status |
+|------|----------------|--------|
+| Week 1 | SQL Fundamentals | 🟡 In Progress |
+| Week 2 | Python for Data Engineering & DuckDB | ⏳ Planned |
+| Week 3 | PySpark Basics | ⏳ Planned |
+| Week 4 | Advanced PySpark & ETL | ⏳ Planned |
+| Week 5 | Apache Airflow & Docker | ⏳ Planned |
+| Week 6 | Apache Kafka & AWS Basics | ⏳ Planned |
+| Week 7 | MedIntel End-to-End Project | ⏳ Planned |
+| Week 8 | Interview Preparation & Repository Enhancement | ⏳ Planned |
 
 ---
 
@@ -79,7 +79,8 @@ Data-Engineering/
 ├── README.md
 │
 ├── SQL/
-│   └── README.md
+│   ├── README.md
+│   └── practice/
 │
 ├── Python/
 │   └── README.md
@@ -107,74 +108,28 @@ Data-Engineering/
 │
 └── Projects/
     └── MedIntel/
-        └── README.md
+        ├── README.md
+        ├── architecture/
+        ├── sql/
+        ├── pyspark/
+        ├── airflow/
+        └── dashboard/
 ```
 
 ---
 
 # 📚 Learning Modules
 
-## 🗄 SQL
-
-Learn relational databases, SQL queries, joins, constraints, transactions, window functions, and interview questions.
-
-**Status:** 🟡 In Progress
-
----
-
-## 🐍 Python for Data Engineering
-
-Learn Python concepts required for data engineering including file handling, data processing, automation, and ETL scripting.
-
-**Status:** ⏳ Planned
-
----
-
-## 🦆 DuckDB
-
-Learn DuckDB for analytical SQL processing, querying large datasets, and local data warehousing.
-
-**Status:** ⏳ Planned
-
----
-
-## ⚡ PySpark
-
-Learn Apache Spark using PySpark for distributed data processing, DataFrames, Spark SQL, and ETL pipelines.
-
-**Status:** ⏳ Planned
-
----
-
-## 🔄 Apache Airflow
-
-Learn workflow orchestration by building scheduled ETL pipelines using DAGs and operators.
-
-**Status:** ⏳ Planned
-
----
-
-## 📡 Apache Kafka
-
-Learn real-time data streaming using Kafka producers, consumers, and event-driven architectures.
-
-**Status:** ⏳ Planned
-
----
-
-## 🐳 Docker
-
-Learn Docker for containerizing applications and deploying data engineering pipelines.
-
-**Status:** ⏳ Planned
-
----
-
-## ☁️ AWS
-
-Learn cloud fundamentals relevant to Data Engineering, including S3, EC2, IAM, and cloud storage concepts.
-
-**Status:** ⏳ Planned
+| Module | Description | Status |
+|----------|-------------|--------|
+| 🗄 SQL | Relational databases, queries, joins, constraints, transactions, window functions | 🟡 In Progress |
+| 🐍 Python | Python concepts for Data Engineering, ETL, automation | ⏳ Planned |
+| 🦆 DuckDB | Analytical database, SQL processing, Python integration | ⏳ Planned |
+| ⚡ PySpark | Distributed data processing, DataFrames, Spark SQL | ⏳ Planned |
+| 🔄 Apache Airflow | Workflow orchestration, DAGs, ETL scheduling | ⏳ Planned |
+| 📡 Apache Kafka | Real-time data streaming, Producers, Consumers | ⏳ Planned |
+| 🐳 Docker | Containerization and deployment | ⏳ Planned |
+| ☁️ AWS | Cloud fundamentals for Data Engineering | ⏳ Planned |
 
 ---
 
@@ -182,7 +137,7 @@ Learn cloud fundamentals relevant to Data Engineering, including S3, EC2, IAM, a
 
 ## MedIntel – Healthcare Data Engineering Pipeline (Ongoing)
 
-MedIntel is an end-to-end Data Engineering project that demonstrates how modern data engineering tools can be combined to build a healthcare data pipeline.
+MedIntel is an end-to-end Data Engineering project that simulates a real-world healthcare data pipeline.
 
 ### Tech Stack
 
@@ -193,15 +148,20 @@ MedIntel is an end-to-end Data Engineering project that demonstrates how modern 
 - Apache Airflow
 - Docker
 
-### Planned Features
+### Project Features
 
 - Patient Data Management
-- Healthcare Data Processing
-- ETL Pipelines
-- Automated Workflow Scheduling
-- Analytical SQL Queries
-- Interactive Dashboard
-- End-to-End Data Pipeline
+- Vital Signs Processing
+- ETL Pipeline
+- Data Validation
+- Workflow Automation
+- SQL Analytics
+- Dashboard Integration
+- Healthcare Reporting
+
+### Current Status
+
+🟡 Database Schema & SQL Development
 
 ---
 
@@ -209,46 +169,67 @@ MedIntel is an end-to-end Data Engineering project that demonstrates how modern 
 
 | Module | Progress |
 |----------|----------|
-| SQL | 🟡 In Progress |
-| Python | ⏳ Planned |
-| DuckDB | ⏳ Planned |
-| PySpark | ⏳ Planned |
-| Airflow | ⏳ Planned |
-| Kafka | ⏳ Planned |
-| Docker | ⏳ Planned |
-| AWS | ⏳ Planned |
-| MedIntel Project | 🟡 Ongoing |
+| SQL | 🟡 Day 2 / 7 |
+| Python | ⏳ Not Started |
+| DuckDB | ⏳ Not Started |
+| PySpark | ⏳ Not Started |
+| Airflow | ⏳ Not Started |
+| Kafka | ⏳ Not Started |
+| Docker | ⏳ Not Started |
+| AWS | ⏳ Not Started |
+| MedIntel | 🟡 Ongoing |
 
 ---
 
 # 📅 Daily Learning Log
 
-| Day | Topic | Status |
-|------|-------|--------|
-| Day 1 | SQL Fundamentals | ✅ |
-| Day 2 | Database Keys | ✅ |
-| Day 3 | Constraints | ⏳ |
-| Day 4 | SQL Commands | ⏳ |
-| Day 5 | Data Retrieval | ⏳ |
-| Day 6 | Joins & Advanced SQL | ⏳ |
-| Day 7 | SQL Mini Project | ⏳ |
+| Day | Learning Topic | Status |
+|------|----------------|--------|
+| Day 1 | SQL Fundamentals | ✅ Completed |
+| Day 2 | Database Keys | ✅ Completed |
+| Day 3 | SQL Constraints | ⏳ Planned |
+| Day 4 | SQL Data Types & Commands | ⏳ Planned |
+| Day 5 | CRUD Operations & SELECT Queries | ⏳ Planned |
+| Day 6 | Functions, GROUP BY, HAVING & Joins | ⏳ Planned |
+| Day 7 | Advanced SQL, Mini Project & Interview Questions | ⏳ Planned |
 
-> This table will be updated daily throughout my learning journey.
-
----
-
-# 💼 Repository Objectives
-
-- Learn Data Engineering from fundamentals to advanced topics.
-- Maintain daily learning consistency.
-- Build a professional GitHub portfolio.
-- Create production-style data engineering projects.
-- Document concepts with practical examples.
-- Prepare for technical interviews.
+> This learning log is updated every day as I progress through my roadmap.
 
 ---
 
-# 📖 Learning Resources
+# 🎯 Current Focus
+
+- ✅ SQL Fundamentals
+- ✅ Database Keys
+- 🔄 Preparing SQL Constraints
+- 📖 Building a complete SQL knowledge base
+
+---
+
+# 🚀 Future Projects
+
+After completing the learning roadmap, I plan to build:
+
+- Healthcare Data Pipeline (MedIntel)
+- Sales ETL Pipeline
+- Real-Time Kafka Streaming Pipeline
+- Data Warehouse using DuckDB
+- PySpark Batch Processing Pipeline
+
+---
+
+# 💼 Repository Goals
+
+- Learn Data Engineering step by step
+- Build a strong GitHub portfolio
+- Document concepts with practical examples
+- Solve interview questions
+- Build production-style projects
+- Share knowledge with the community
+
+---
+
+# 📖 References
 
 - SQL Documentation
 - PostgreSQL Documentation
@@ -263,7 +244,7 @@ MedIntel is an end-to-end Data Engineering project that demonstrates how modern 
 
 # 🤝 Contributions
 
-This repository is a personal learning journal.
+This repository is my personal learning journal.
 
 Suggestions, corrections, and discussions are always welcome.
 
@@ -277,4 +258,6 @@ Suggestions, corrections, and discussions are always welcome.
 
 ---
 
-⭐ If you find this repository useful or interesting, consider giving it a star!
+⭐ Thank you for visiting my repository!
+
+If you find this project helpful, consider giving it a ⭐.
