@@ -1,15 +1,15 @@
 # 🗄️ SQL for Data Engineering
 
-> A focused SQL learning journey covering database fundamentals, querying, data manipulation, and advanced SQL concepts required for Data Engineering.
+> A focused SQL learning module covering database fundamentals, querying, data manipulation, and advanced SQL concepts used in Data Engineering.
 
-![SQL](https://img.shields.io/badge/SQL-Learning-blue)
-![Progress](https://img.shields.io/badge/Progress-Day%204%20of%205-success)
+![SQL](https://img.shields.io/badge/SQL-Completed-success)
+![Focus](https://img.shields.io/badge/Focus-Data%20Engineering-blue)
 
 ---
 
 ## 🎯 Objective
 
-Build a strong SQL foundation for Data Engineering through conceptual understanding, hands-on queries, and real-world implementation.
+Build a strong SQL foundation for Data Engineering through conceptual understanding, hands-on querying, and practical implementation.
 
 ---
 
@@ -24,8 +24,6 @@ Build a strong SQL foundation for Data Engineering through conceptual understand
 - SQL Architecture
 - SQL in Data Engineering
 
----
-
 ### Day 2 — Database Keys ✅
 
 - Primary Key
@@ -36,9 +34,7 @@ Build a strong SQL foundation for Data Engineering through conceptual understand
 - Super Key
 - Unique Key
 
-📄 Practice: `database_keys.sql`
-
----
+📄 `database_keys.sql`
 
 ### Day 3 — Constraints & Data Types ✅
 
@@ -57,26 +53,15 @@ Build a strong SQL foundation for Data Engineering through conceptual understand
 - BOOLEAN
 - DATE, TIME, TIMESTAMP
 
-📄 Practice: `constraints.sql`
-
----
+📄 `constraints.sql`
 
 ### Day 4 — SQL Commands, CRUD & Querying ✅
 
-**DDL**
-- CREATE
-- ALTER
-- DROP
-- TRUNCATE
+**Commands & CRUD**
+- CREATE, ALTER, DROP, TRUNCATE
+- INSERT, SELECT, UPDATE, DELETE
 
-**DML & CRUD**
-- INSERT
-- SELECT
-- UPDATE
-- DELETE
-
-**Querying & Filtering**
-- SELECT
+**Querying**
 - WHERE
 - DISTINCT
 - ORDER BY
@@ -84,7 +69,7 @@ Build a strong SQL foundation for Data Engineering through conceptual understand
 - IN
 - BETWEEN
 
-**Aggregate Functions**
+**Aggregations**
 - COUNT()
 - SUM()
 - AVG()
@@ -93,75 +78,88 @@ Build a strong SQL foundation for Data Engineering through conceptual understand
 - GROUP BY
 - HAVING
 
-📄 Practice:
-- `sql_commands.sql`
-- `queries.sql`
+📄 `sql_commands.sql`  
+📄 `queries.sql`
+
+### Day 5 — Advanced SQL ✅
+
+**Joins**
+- INNER JOIN
+- LEFT JOIN
+- RIGHT JOIN
+- FULL OUTER JOIN
+- SELF JOIN
+
+**Advanced Concepts**
+- Subqueries
+- Common Table Expressions (CTEs)
+- Window Functions
+- PARTITION BY
+- ROW_NUMBER()
+- RANK()
+- DENSE_RANK()
+
+📄 `advanced_sql.sql`
 
 ---
 
-## 💻 SQL Files
+## 💻 Hands-On Files
 
 ```text
 SQL/
-│
 ├── README.md
 ├── database_keys.sql
 ├── constraints.sql
 ├── sql_commands.sql
-└── queries.sql
+├── queries.sql
+└── advanced_sql.sql
 ```
-
-Each SQL file contains hands-on implementations of the concepts documented in this README.
 
 ---
 
 ## 🔄 SQL in Data Engineering
 
-SQL is commonly used by Data Engineers for:
+SQL is used throughout Data Engineering for:
 
 - Data Extraction
 - Data Cleaning
 - Data Transformation
 - Data Validation
-- ETL / ELT Pipelines
+- ETL / ELT
 - Data Quality Checks
-- Data Aggregation
-- Data Warehousing
-- Analytical Queries
-
-Typical workflow:
+- Aggregations
+- Joining datasets
+- Analytical Processing
 
 ```text
 Raw Data
    ↓
 SQL Queries
    ↓
-Filtering & Cleaning
+Clean & Transform
    ↓
-Transformation
+Join & Aggregate
    ↓
-Aggregation
+Validated Data
    ↓
-Processed Data
+Analytics / Data Pipeline
 ```
 
 ---
 
 ## 🏥 Applied to MedIntel
 
-SQL concepts learned during this module are applied to the **MedIntel Healthcare Data Engineering project**.
+The SQL concepts learned in this module are applied to the **MedIntel Healthcare Data Engineering project** for:
 
-Examples include:
-
-- Designing `Patients` and `VitalSigns` tables
-- Primary and Foreign Key relationships
+- Patient and VitalSigns table design
+- Primary & Foreign Key relationships
 - Data validation using constraints
-- Retrieving patient records
-- Filtering vital-sign data
-- Aggregating healthcare data
-- Generating dashboard-ready queries
-
-Example relationship:
+- Patient data retrieval
+- Vital-sign filtering
+- Table joins
+- Aggregations
+- Analytical queries
+- Dashboard data preparation
 
 ```text
 Patients
@@ -172,65 +170,54 @@ VitalSigns
    └── patient_id (FK)
 ```
 
-After completing the SQL module, the learned concepts will be implemented together in the MedIntel data pipeline.
-
 ---
 
 ## 💼 Key Interview Concepts
 
-**Primary Key vs Foreign Key**  
-A Primary Key uniquely identifies a record, while a Foreign Key establishes a relationship with another table.
-
-**WHERE vs HAVING**  
-`WHERE` filters rows before aggregation, while `HAVING` filters groups after `GROUP BY`.
-
-**DELETE vs TRUNCATE vs DROP**
-- `DELETE` removes selected rows.
-- `TRUNCATE` removes all rows while keeping the table structure.
-- `DROP` removes the table itself.
-
-**GROUP BY**  
-Groups rows with common values so aggregate functions can be applied to each group.
+- Primary Key vs Foreign Key
+- WHERE vs HAVING
+- DELETE vs TRUNCATE vs DROP
+- INNER JOIN vs LEFT JOIN
+- Subquery vs CTE
+- GROUP BY and Aggregate Functions
+- ROW_NUMBER vs RANK vs DENSE_RANK
+- Window Functions
+- SQL execution and database fundamentals
 
 ---
 
-## 🗓️ 5-Day SQL Roadmap
+## ✅ SQL Module Completed
 
 | Day | Topic | Status |
 |-----|-------|--------|
-| Day 1 | SQL Fundamentals | ✅ |
-| Day 2 | Database Keys | ✅ |
-| Day 3 | Constraints & Data Types | ✅ |
-| Day 4 | SQL Commands, CRUD, Queries & Aggregations | ✅ |
-| Day 5 | Joins, Subqueries, CTEs & Window Functions | ⏳ |
+| 1 | SQL Fundamentals | ✅ |
+| 2 | Database Keys | ✅ |
+| 3 | Constraints & Data Types | ✅ |
+| 4 | SQL Commands, CRUD & Aggregations | ✅ |
+| 5 | Joins, Subqueries, CTEs & Window Functions | ✅ |
 
 ---
 
-## ⏭️ Day 5 — Advanced SQL
+## 🎯 Outcome
 
-The final SQL learning day will cover:
+Completed the SQL foundation required for Data Engineering, covering:
 
-- INNER JOIN
-- LEFT JOIN
-- RIGHT JOIN
-- FULL OUTER JOIN
-- Self Join
-- Subqueries
-- Common Table Expressions (CTEs)
-- Window Functions
-- ROW_NUMBER()
-- RANK()
-- DENSE_RANK()
-- PARTITION BY
+```text
+Database Fundamentals
+        ↓
+Keys & Constraints
+        ↓
+CRUD & SQL Commands
+        ↓
+Filtering & Aggregation
+        ↓
+Joins
+        ↓
+Subqueries & CTEs
+        ↓
+Window Functions
+        ↓
+Data Engineering Applications
+```
 
-A final `advanced_sql.sql` file will contain the practical implementation.
-
----
-
-## 🎯 Expected Outcome
-
-After completing this SQL module, I will be able to use SQL for:
-
-**Data Retrieval → Filtering → Transformation → Aggregation → Joining → Analytical Processing**
-
-These skills provide the SQL foundation required for building Data Engineering pipelines.
+The next step is applying these SQL concepts to an end-to-end Data Engineering project and continuing with the next technologies in the learning roadmap.
