@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ⚡ PySpark for Data Engineering
 
 > Learning Apache Spark with PySpark for distributed data processing, transformation, and building scalable Data Engineering pipelines.
@@ -151,3 +152,46 @@ DuckDB / Analytics
 ## 🎯 Outcome
 
 Understand how Apache Spark performs distributed data processing and how PySpark is used in modern Data Engineering pipelines.
+=======
+## 📚 Day 2 — DataFrames & Schemas
+
+Today I learned how PySpark represents structured data using DataFrames and schemas.
+
+### Topics Covered
+
+- SparkSession
+- DataFrames
+- Creating DataFrames
+- DataFrame columns
+- Schema
+- Data Types
+- `show()`
+- `printSchema()`
+- `select()`
+
+### DataFrame Workflow
+
+```text
+Raw Data
+   ↓
+SparkSession
+   ↓
+DataFrame
+   ↓
+Schema
+   ↓
+Select / Inspect Data
+
+
+
+## ⏭️ Next
+
+**Day 3 — PySpark Transformations & Actions**
+
+- `select()`
+- `filter()`
+- `withColumn()`
+- `drop()`
+- `distinct()`
+- Transformations vs Actions
+- Lazy Evaluation
