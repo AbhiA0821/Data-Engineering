@@ -195,3 +195,38 @@ Select / Inspect Data
 - `distinct()`
 - Transformations vs Actions
 - Lazy Evaluation
+
+
+
+## 📚 Day 3 — Transformations & Actions
+
+Today I learned how PySpark processes data using transformations and actions.
+
+### Topics Covered
+
+- Transformations
+- Actions
+- Lazy Evaluation
+- `select()`
+- `filter()`
+- `withColumn()`
+- `drop()`
+- `distinct()`
+- `show()`
+- `count()`
+- `collect()`
+
+### Transformations
+
+Transformations create a new DataFrame from an existing DataFrame.
+
+Examples:
+
+```python
+df.select("name", "age")
+
+df.filter(df.age > 30)
+
+df.withColumn("age_plus_10", df.age + 10)
+
+df.drop("age")
