@@ -230,3 +230,36 @@ df.filter(df.age > 30)
 df.withColumn("age_plus_10", df.age + 10)
 
 df.drop("age")
+
+
+## 📚 Day 4 — Data Cleaning & Column Operations
+
+### Topics Covered
+
+- Handling NULL values
+- `dropna()`
+- `fillna()`
+- `withColumn()`
+- `withColumnRenamed()`
+- `when()`
+- `otherwise()`
+- `col()`
+- Removing duplicates
+- Data validation
+
+### Data Cleaning Workflow
+
+```text
+Raw Data
+   ↓
+Check Missing Values
+   ↓
+Handle NULLs
+   ↓
+Transform Columns
+   ↓
+Validate Data
+   ↓
+Remove Duplicates
+   ↓
+Clean Data
