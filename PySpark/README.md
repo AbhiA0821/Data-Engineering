@@ -263,3 +263,29 @@ Validate Data
 Remove Duplicates
    ↓
 Clean Data
+
+## 📚 Day 5 — Aggregations & Joins
+
+### Topics Covered
+
+- `groupBy()`
+- `count()`
+- `sum()`
+- `avg()`
+- `min()`
+- `max()`
+- Inner Join
+- Left Join
+- Right Join
+- Outer Join
+
+### Aggregation Workflow
+
+```text
+DataFrame
+   ↓
+groupBy()
+   ↓
+Aggregate Functions
+   ↓
+Summary Data
