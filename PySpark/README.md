@@ -289,3 +289,31 @@ groupBy()
 Aggregate Functions
    ↓
 Summary Data
+
+
+## 📚 Day 6 — Spark SQL, Window Functions & Partitioning
+
+### Topics Covered
+
+- Spark SQL
+- Temporary Views
+- SQL Queries on DataFrames
+- Window Functions
+- `ROW_NUMBER()`
+- `RANK()`
+- `DENSE_RANK()`
+- `partitionBy()`
+- `orderBy()`
+
+### Spark SQL
+
+DataFrames can be registered as temporary SQL views and queried using SQL.
+
+```text
+DataFrame
+    ↓
+Temporary View
+    ↓
+Spark SQL
+    ↓
+Result
