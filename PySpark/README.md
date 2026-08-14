@@ -317,3 +317,33 @@ Temporary View
 Spark SQL
     ↓
 Result
+
+
+
+
+## 📚 Day 7 — Optimization & ETL Pipeline
+
+### Topics Covered
+
+- Spark Optimization Basics
+- `cache()`
+- `persist()`
+- Repartitioning
+- Coalescing
+- ETL Pipeline Structure
+- Reading Data
+- Transforming Data
+- Writing Processed Data
+
+### ETL Workflow
+
+```text
+Extract
+   ↓
+Transform
+   ↓
+Validate
+   ↓
+Aggregate
+   ↓
+Load
