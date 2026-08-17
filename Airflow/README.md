@@ -29,3 +29,40 @@ Extract
 Transform
  ↓
 Load
+
+
+
+
+## 📚 Day 2 — Operators, Tasks & Dependencies
+
+### Topics Covered
+
+- DAG vs Task
+- Operators
+- PythonOperator
+- BashOperator
+- Task Dependencies
+- Sequential Execution
+- `>>` dependency operator
+- `task_id`
+
+### Operators
+
+Operators define what a task should do.
+
+Examples:
+
+- `PythonOperator` — executes Python functions
+- `BashOperator` — executes shell commands
+
+### Task Dependency
+
+```text
+Extract
+   ↓
+Transform
+   ↓
+Validate
+   ↓
+Finish
+
