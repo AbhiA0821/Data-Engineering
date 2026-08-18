@@ -66,3 +66,28 @@ Validate
    ↓
 Finish
 
+## 📚 Day 3 — Scheduling, Retries & Dependencies
+
+### Topics Covered
+
+- DAG Scheduling
+- `schedule`
+- `start_date`
+- `catchup`
+- Task Retries
+- Retry Delay
+- Task Dependencies
+- Upstream & Downstream Tasks
+
+### Scheduling
+
+Airflow Scheduler determines when DAGs should run.
+
+Example:
+
+```text
+@daily
+   ↓
+DAG Run
+   ↓
+Extract → Transform → Load
