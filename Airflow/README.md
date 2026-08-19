@@ -91,3 +91,32 @@ Example:
 DAG Run
    ↓
 Extract → Transform → Load
+
+## 📚 Day 5 — Airflow + Docker
+
+### Topics Covered
+
+- Docker Containers
+- Docker Images
+- Docker Compose
+- Airflow Containerization
+- Airflow Webserver
+- Airflow Scheduler
+- DAGs inside Containers
+
+### Why Docker?
+
+Docker provides a consistent environment for running Airflow and its dependencies.
+
+### Architecture
+
+```text
+Docker Compose
+      ↓
+Airflow Services
+      ↓
+Scheduler + Webserver
+      ↓
+DAG
+      ↓
+Data Pipeline
