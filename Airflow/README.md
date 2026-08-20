@@ -120,3 +120,27 @@ Scheduler + Webserver
 DAG
       ↓
 Data Pipeline
+
+
+## 📚 Day 6 — Airflow + PySpark
+
+### Topics Covered
+
+- Running PySpark from Airflow
+- BashOperator
+- DAG orchestration
+- Task dependencies
+- Data processing workflow
+
+### Workflow
+
+```text
+Airflow DAG
+     ↓
+Run PySpark
+     ↓
+Clean & Transform
+     ↓
+Aggregate
+     ↓
+Processed Data
