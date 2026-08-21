@@ -144,3 +144,21 @@ Clean & Transform
 Aggregate
      ↓
 Processed Data
+
+
+## 📚 Day 7 — Complete MedIntel Airflow Pipeline
+
+Today I designed an end-to-end Airflow workflow for the MedIntel healthcare data pipeline.
+
+### Pipeline
+
+```text
+Data Generation
+      ↓
+PySpark Processing
+      ↓
+Data Validation
+      ↓
+DuckDB Loading
+      ↓
+Analytics / Dashboard
